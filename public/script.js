@@ -36,23 +36,29 @@ function handleOperation(operation) {
     var bool = false;
     var opOn = false;
     for (i = 0; i < operation.length; i++) {
-        console.log(i);
         var numbCheck = numbRegex.test(operation[i]);
         var addCheck = addRegex.test(operation[i]);
         var subCheck = subRegex.test(operation[i]);
         var mulCheck = mulRegex.test(operation[i]);
         var divCheck = divRegex.test(operation[i]);
-        if ((addCheck == true) || (subCheck == true) || (mulCheck == true) || (divCheck == true)) {
+        if (((addCheck == true) || (subCheck == true) || (mulCheck == true) || (divCheck == true)) && (firstNumb.length > 0)) {
             operator = operation[i];
             bool = true;
         }
+
+        if (((addCheck == true) || (subCheck == true) || (mulCheck == true) || (divCheck == true)) && (firstNumb.length <= 0)) {
+            firstNumb.push("-");
+        }
+
+
         if ((numbCheck === true) && (bool === false)) {
             firstNumb.push(operation[i]);
         }
         if ((numbCheck === true) && (bool === true)) {
             secNumb.push(operation[i]);
         }
-
+        console.log(firstNumb);
+        console.log(secNumb);
 
     }
 
