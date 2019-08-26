@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc-body">
+            <div class="calc-screen">
+                <div class="calc-operation"></div>
+                <div class="calc-typed"><span class="blink-me">_</span></div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button c other" type="button" attr="C">C</div>
+                <div class="button l other" type="button" attr="C">≠</div>
+                <div class="button l other" type="button" attr="%">%</div>
+                <div class="button l other" type="button" attr="/">/</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button other" type="button" attr="7">7</div>
+                <div class="button other" type="button" attr="8">8</div>
+                <div class="button other" type="button" attr="9">9</div>
+                <div class="button l other" type="button" attr="*">*</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button other" type="button" attr="4">4</div>
+                <div class="button other" type="button" attr="5">5</div>
+                <div class="button other" type="button" attr="6">6</div>
+                <div class="button l other" type="button" attr="-">−</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button other" type="button" attr="1">1</div>
+                <div class="button other" type="button" attr="2">2</div>
+                <div class="button other" type="button" attr="3">3</div>
+                <div class="button l other" type="button" attr="+">+</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button other" type="button" attr=".">.</div>
+                <div class="button other" type="button" attr="0">0</div>
+                <div class="button other" type="button" attr="&">&</div>
+                <div class="button l" type="button" id="equals" attr="=">=</div>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'
+        integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
